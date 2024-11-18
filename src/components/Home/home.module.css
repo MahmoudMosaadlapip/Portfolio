@@ -1,0 +1,145 @@
+
+.Container{
+    margin: auto;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.text {
+width: 65%;
+}
+
+.text p:nth-child(1){
+    font-size: 60px;
+    font-weight: bold;
+    color: #333333;
+    display: inline;
+}
+
+.text p:nth-child(1) span{
+    font-size: 60px;
+    font-weight: bold;
+    color: #828794;
+}
+
+.text p:nth-child(2){
+    font-size: 18px;
+    font-weight: 500;
+    color: #807a71;
+    letter-spacing: 1px;
+}
+
+.myLogo{
+    width: 750px;
+    height: 600px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 100px;
+    border: 5px solid #494848;
+}
+
+
+.myLogo img{
+    width: 600px;
+    height: 600px;
+}
+.myInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.myInfo a{
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+.myInfo a:nth-child(1){
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.myInfo a:nth-child(2){
+    background-color: #333333;
+    border: 2px solid #333333;
+    color: white;
+}
+.myLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.myLinks svg{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.myInfo a:nth-child(1):hover{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    transition: all 0.7s;
+}
+
+
+@media screen and (max-width:1100px) {
+    .Container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .text{
+        order: 2;
+    }
+    .text p:nth-child(1){
+        font-size: 40px;
+    }
+    
+    .text p:nth-child(1) span{
+        font-size: 40px;
+    }
+    
+    .text p:nth-child(2){
+        font-size: 18px;
+        font-weight: 500;
+        color: #807a71;
+        letter-spacing: 1px;
+    }
+    
+    .myLogo{
+        width: 500px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .myLogo img{
+        width: 420px;
+        height: 450px;
+    }
+    .myInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+}

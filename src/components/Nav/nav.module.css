@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300');
+body{
+    font-family: "Lato", sans-serif;
+}
+nav{
+    width: 100%;
+    margin: auto;
+    background-color: whitesmoke;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    
+}
+.NavContainer{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.NavLogo img{
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.navLinks a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.navLinks a:hover{
+    color: rgb(102, 97, 97);
+}
+.navLinks a:before, .navLinks a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.navLinks a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.navLinks a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.navLinks a:hover:before, .navLinks a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.navToggler{
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .NavContainer{
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 30px;
+    }
+
+    .navToggler{
+        display: flex;
+        cursor: pointer;
+        padding-right: 4cqmin;
+    }
+    
+    .navToggler svg{
+        color: #8d919d;
+        width: 25px;
+        height: 25px;
+    
+    }
+    
+    .navLinks{
+        width: 290px;
+        height: 20vh;
+        background:#8d919d;
+        position: absolute;
+        top: 55px;
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navLinks a{
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .navLinks a:hover{
+        color: black;
+    }
+    
+    .hide{
+        display: none;
+    }
+    
+}
